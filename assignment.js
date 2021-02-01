@@ -1,10 +1,10 @@
 // GitHub-link:    https://github.com/farhan-nahid/third-assignment
 
-// Promlem 1: kilometerToMeter
+// Problem 1: kilometerToMeter
 
 function kilometerToMeter(kilometer) {
   if (kilometer < 0) {
-    return "You Can not convert a negetive value";
+    return "You Can not convert a negative value";
   } else {
     var meter = kilometer * 1000;
     return meter;
@@ -13,12 +13,12 @@ function kilometerToMeter(kilometer) {
 
 // Call Function
 const convertIntoMeter = kilometerToMeter(100);
-console.log(convertIntoMeter); //print output  (Negative value error massage incuding)
+console.log(convertIntoMeter); //print output  (Negative value error massage including)
 
-// Problem 2:  badgetCalulator
+// Problem 2:  budgetCalculator
 
-function badgetCalulator(watch, phone, laptop) {
-  if (watch / phone / laptop < 0) {
+function budgetCalculator(watch, phone, laptop) {
+  if (watch || phone || laptop < 0) {
     return "Please enter the right number what you want";
   } else {
     var watchPrize = watch * 50;
@@ -31,8 +31,8 @@ function badgetCalulator(watch, phone, laptop) {
 }
 
 // Call Function
-var totalCost = badgetCalulator(20, 20, 20);
-console.log(totalCost); //print output  (Negative value error massage incuding)
+var totalCost = budgetCalculator(20, 20, 20);
+console.log(totalCost); //print output  (Negative value error massage including)
 
 // Problem 3:   hotelCost
 
@@ -65,25 +65,25 @@ function hotelCost(day) {
 }
 
 // Call Function
-const farhan = hotelCost(30);
-console.log(farhan); //print output  (Negative value error massage incuding)
+const yourCost = hotelCost(30);
+console.log(yourCost); //print output  (Negative value error massage including)
 
 // Problem 4:megaFriend
 
 function megaFriend(friends) {
   if (friends.length > 0) {
-    var bigFirend = friends[0];
+    var bigFriend = friends[0];
     for (var i = 0; i < friends.length; i++) {
-      var newBigFirend = friends[i];
-      if (typeof newBigFirend === "number") {
+      var newBigFriend = friends[i];
+      if (typeof newBigFriend === "number") {
         return "Array Element can't be a number !!";
       } else {
-        if (newBigFirend.length > bigFirend.length) {
-          bigFirend = newBigFirend;
+        if (newBigFriend.length > bigFriend.length) {
+          bigFriend = newBigFriend;
         }
       }
     }
-    return bigFirend;
+    return bigFriend;
   }
 }
 
@@ -91,4 +91,4 @@ function megaFriend(friends) {
 var friendList = ["Abir Bhai", "Nahid", "Farhan"];
 // Call Function
 var biggestName = megaFriend(friendList);
-console.log(biggestName); //print output  (Number type error massage incuding)
+console.log(biggestName); //print output  (Number type error massage including)
