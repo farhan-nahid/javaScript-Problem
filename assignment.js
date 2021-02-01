@@ -18,7 +18,7 @@ console.log(convertIntoMeter); //print output  (Negative value error massage inc
 // Problem 2:  budgetCalculator
 
 function budgetCalculator(watch, phone, laptop) {
-  if (watch || phone || laptop < 0) {
+  if (watch < 0 || phone < 0 || laptop < 0) {
     return "Please enter the right number what you want";
   } else {
     var watchPrize = watch * 50;
